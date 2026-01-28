@@ -14,7 +14,7 @@ a{color:var(--midnight)} a:hover{color:var(--sky)}
 .skip-link:focus{left:20px;z-index:1000}
 header.site-header{background:var(--midnight);color:#fff;padding:14px 0}
 .brand{display:flex;align-items:center;gap:14px}
-.logo{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.12);display:grid;place-items:center;border:1px solid rgba(255,255,255,.25);font-weight:700}
+.logo{width:auto;height:48px;border-radius:12px;background:rgba(255,255,255,.12);display:grid;place-items:center;border:1px solid rgba(255,255,255,.25);font-weight:700}
 .brand h1{font-size:18px;margin:0}
 .brand p{margin:0;font-size:13px;color:rgba(255,255,255,.85)}
 .header-row{display:flex;align-items:center;justify-content:space-between;gap:18px}
@@ -61,7 +61,7 @@ fieldset{border:1px solid #e3e8f0;border-radius:var(--radius);padding:14px}
 legend{font-weight:750}
 .form-row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
 .form-note{color:var(--gray);font-size:14px}
-footer{background:#1f2328;color:#e8ecf1;padding:28px 0}
+footer{background:#1f2328;color:#e8ecf1;padding:28px 0;margin-top: 48px}
 footer a{color:#e8ecf1}
 .footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 small{color:#c8d0db}
