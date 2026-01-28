@@ -1,0 +1,68 @@
+/* Paradigm Pet Professionals - Interactive Prototype (Static)
+Brand colors (UI specs): #003B6D, #6699CC, #676767, #BDBDBD
+*/
+:root{
+  --midnight:#003B6D; --sky:#6699CC; --gray:#676767; --silver:#BDBDBD;
+  --bg:#ffffff; --card:#f6f7f9; --text:#1c1c1c; --max:1100px; --radius:16px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.5}
+a{color:var(--midnight)} a:hover{color:var(--sky)}
+.container{max-width:var(--max);margin:0 auto;padding:0 20px}
+.skip-link{position:absolute;left:-9999px;top:10px;background:#fff;padding:10px 12px;border:2px solid var(--midnight);border-radius:12px}
+.skip-link:focus{left:20px;z-index:1000}
+header.site-header{background:var(--midnight);color:#fff;padding:14px 0}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:44px;height:44px;border-radius:12px;background:rgba(255,255,255,.12);display:grid;place-items:center;border:1px solid rgba(255,255,255,.25);font-weight:700}
+.brand h1{font-size:18px;margin:0}
+.brand p{margin:0;font-size:13px;color:rgba(255,255,255,.85)}
+.header-row{display:flex;align-items:center;justify-content:space-between;gap:18px}
+.nav-row{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+nav.primary a{color:#fff;text-decoration:none;padding:8px 10px;border-radius:12px}
+nav.primary a[aria-current="page"]{background:rgba(255,255,255,.18);outline:2px solid rgba(255,255,255,.25)}
+.actions{display:flex;align-items:center;gap:10px}
+.actions input[type="search"]{width:240px;max-width:38vw;padding:10px 12px;border-radius:12px;border:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:14px;border:2px solid var(--sky);background:transparent;color:#fff;text-decoration:none;font-weight:650}
+.btn.primary{background:var(--sky);border-color:var(--sky);color:#fff}
+.breadcrumbs{background:#eef3f8;border-bottom:1px solid #d8e2ee;font-size:14px}
+.breadcrumbs .container{padding:10px 20px}
+.breadcrumbs a{text-decoration:none}
+main{padding:26px 0 50px}
+.hero{background:linear-gradient(0deg,#f4f7fb,#ffffff);border:1px solid #e2e8f2;border-radius:var(--radius);padding:26px;display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+.hero h2{margin:0 0 10px;font-size:34px}
+.hero p{margin:0 0 12px;color:var(--gray)}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:12px}
+.hero .jump{margin-top:14px;padding:12px 14px;border-radius:14px;background:#fff;border:1px solid #e2e8f2;font-size:14px}
+.hero .jump a{margin-right:14px}
+.hero .img{border-radius:var(--radius);border:1px dashed #c8d4e3;background:#f1f4f8;display:grid;place-items:center;color:var(--gray);min-height:260px}
+.section{margin-top:26px}
+.section h3{margin:0 0 8px;font-size:22px}
+.section p{margin:0 0 12px;color:var(--gray)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid #e3e8f0;border-radius:var(--radius);padding:16px}
+.card .ph{height:140px;border-radius:14px;background:#e9edf3;border:1px dashed #c8d4e3;display:grid;place-items:center;color:var(--gray);margin-bottom:10px}
+.card h4{margin:6px 0 6px;font-size:18px}
+.card a.btn{color:var(--midnight);border-color:var(--sky);background:#fff}
+.callout{background:#f4f7fb;border:1px solid #dbe4ef;border-radius:var(--radius);padding:16px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.callout a.btn{color:var(--midnight);background:#fff}
+.two-col{display:grid;grid-template-columns:280px 1fr;gap:22px;align-items:start}
+.sidenav{position:sticky;top:12px;border:1px solid #e3e8f0;border-radius:var(--radius);padding:14px;background:#fff}
+.sidenav h4{margin:0 0 10px}
+.sidenav a{display:block;padding:8px 10px;border-radius:12px;text-decoration:none}
+.sidenav a:hover{background:#f3f6fa}
+.sidenav a.active{background:#e9f0fa;border:1px solid #cfe0f4}
+article{border:1px solid #e3e8f0;border-radius:var(--radius);padding:18px;background:#fff}
+article h2{margin:0 0 8px} article h3{margin:22px 0 6px} article ul{margin:8px 0 14px}
+form{display:grid;gap:12px}
+label{font-weight:650}
+input,select{width:100%;padding:10px 12px;border-radius:12px;border:1px solid #cdd7e5;font:inherit}
+fieldset{border:1px solid #e3e8f0;border-radius:var(--radius);padding:14px}
+legend{font-weight:750}
+.form-row{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.form-note{color:var(--gray);font-size:14px}
+footer{background:#1f2328;color:#e8ecf1;padding:28px 0}
+footer a{color:#e8ecf1}
+.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+small{color:#c8d0db}
+@media (max-width:980px){.hero{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.actions input[type="search"]{width:100%}}
